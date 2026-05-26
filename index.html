@@ -276,6 +276,19 @@
     .border-blue-200 { border-color: #4E8AFA !important; }
     
     .bg-violet-600 { background-color: #6B46C1 !important; }
+    /* Profile photo sizing */
+    .profile-photo{
+      width:100%;
+      height:45rem; /* 320px */
+      object-fit:cover;
+      display:block;
+      border-top-left-radius:32px;
+      border-top-right-radius:32px;
+    }
+
+    @media (max-width:768px){
+      .profile-photo{ height:16rem; /* 256px */ }
+    }
   </style>
 </head>
 
@@ -608,7 +621,12 @@
         <!-- 左 -->
         <div class="glass rounded-[32px] p-8 lg:p-10 fade-up">
 
-          <div class="flex items-center gap-4 mb-8">
+          <!-- 個人照片 -->
+          <div class="mb-20 -mx-20 -mt-8">
+            <img src="./mywork/poan.png" alt="趙伯元" class="profile-photo">
+          </div>
+
+          <div class="flex items-center gap-4 mb-8 px-8 lg:px-10">
             <div class="w-16 h-16 rounded-3xl bg-gradient-to-br from-blue-600 to-violet-600 flex items-center justify-center text-white text-2xl">
               <i class="fa-solid fa-user-tie"></i>
             </div>
@@ -623,7 +641,7 @@
             </div>
           </div>
 
-          <div class="space-y-5 text-slate-600 leading-8">
+          <div class="space-y-5 text-slate-600 leading-8 px-8 lg:px-10">
             <p>
               專精於企業 AI 自動化、LLM 整合與流程數據化，
               長期協助中小企業解決人力不足、資訊斷裂、流程低效等問題。
@@ -709,6 +727,95 @@
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- Project Showcase -->
+  <section id="showcase" class="py-28 bg-gradient-to-b from-slate-50/50 to-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+      <div class="text-center mb-16 fade-up">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-semibold text-blue-700">
+          TRAINING & SPEAKING EXPERIENCE
+        </div>
+
+        <h2 class="mt-6 text-4xl md:text-5xl font-black">
+          企業內訓與
+          <span class="gradient-text">實戰展演</span>
+        </h2>
+
+        <p class="mt-6 text-lg text-slate-600 max-w-3xl mx-auto leading-9">
+          長期為台灣頂尖企業與政府機構提供 AI 培訓與技術分享，
+          協助業界領袖快速掌握最新自動化與數位轉型趨勢。
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+        <!-- Expo Stage -->
+        <div class="group relative rounded-[24px] overflow-hidden h-80 fade-up">
+          <img src="./mywork/國科會-expo-stage-01.jpg" alt="國科會論壇演講" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+            <div>
+              <div class="text-sm font-semibold text-blue-300">國科會論壇</div>
+              <h3 class="mt-2 text-xl font-black text-white">AI 創新趨勢分享</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative rounded-[24px] overflow-hidden h-80 fade-up">
+          <img src="./mywork/台灣 Top3 IC設計-expo-stage-02.jpg" alt="IC設計企業演講" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+            <div>
+              <div class="text-sm font-semibold text-violet-300">台灣 Top3 IC 設計企業</div>
+              <h3 class="mt-2 text-xl font-black text-white">工程師技能升級專題</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Training Classes -->
+        <div class="group relative rounded-[24px] overflow-hidden h-80 fade-up">
+          <img src="./mywork/台灣 Top3 航空業-training-classroom-04.png" alt="航空業培訓" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+            <div>
+              <div class="text-sm font-semibold text-emerald-300">台灣 Top3 航空業</div>
+              <h3 class="mt-2 text-xl font-black text-white">企業 AI 內訓課程</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative rounded-[24px] overflow-hidden h-80 fade-up">
+          <img src="./mywork/台灣 Top3 電信業-training-classroom-01.png" alt="電信業培訓" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+            <div>
+              <div class="text-sm font-semibold text-blue-300">台灣 Top3 電信業</div>
+              <h3 class="mt-2 text-xl font-black text-white">LLM 與自動化工作坊</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative rounded-[24px] overflow-hidden h-80 fade-up">
+          <img src="./mywork/工研院-training-classroom-02.png" alt="工研院課程" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+            <div>
+              <div class="text-sm font-semibold text-violet-300">工研院培訓中心</div>
+              <h3 class="mt-2 text-xl font-black text-white">Python 進階開發班</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="group relative rounded-[24px] overflow-hidden h-80 fade-up">
+          <img src="./mywork/資策會-training-classroom-03.png" alt="資策會課程" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+            <div>
+              <div class="text-sm font-semibold text-emerald-300">資策會教育訓練</div>
+              <h3 class="mt-2 text-xl font-black text-white">AI 實戰應用課程</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
